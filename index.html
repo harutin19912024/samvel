@@ -1,48 +1,364 @@
 <!doctype html>
-<html lang="en" class="h-100">
-  <head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.104.2">
-    <title>Cover Template · Bootstrap v5.2</title>
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
-    <link href="/css/main.css" rel="stylesheet">
-  </head>
-  <body class="d-flex h-100 text-center text-bg-dark">
-    
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <!-- SECTION HEADER -->
-  <header class="mb-auto">
-    <div>
-      <h3 class="float-md-start mb-0">Cover</h3>
-      <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a>
-        <a class="nav-link fw-bold py-1 px-0" href="#">Features</a>
-        <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
-      </nav>
+    <meta name="description" content="Golden Member<">
+    <meta name="author" content="">
+    <title>Golden Member</title>
+    <link href="/css/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/lib/bootstrap-icons-min.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
+
+    <link rel="preload" href="fonts/roboto/Roboto-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto/Roboto-Thin.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="preload" href="fonts/inter/Inter-Thin.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/inter/Inter-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/inter/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/inter/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/inter/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/inter/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+</head>
+<body class="">
+
+<!--  &lt;!&ndash; SECTION HEADER &ndash;&gt;-->
+<header class="mb-auto bg-black header pt-1">
+    <div class="row py-2 px-0 mx-auto d-flex justify-content-between white-color container">
+        <ul class="d-flex gap-3 col-9 fw-light contact-box px-0 mb-0">
+            <li class="me-4"><a href="mailto:info@goldmember.am"> <i class="bi bi-envelope-fill pe-2"></i>info@goldmember.am</a>
+            </li>
+            <li class="me-4"><a href="tel:+37494261605"> <i class="bi bi-telephone-fill pe-2"></i> (+374) 94 261 605</a>
+            </li>
+            <li class="me-4"><a href="tel:+37494261606"> <i class="bi bi-telephone-fill pe-2"></i>(+374) 94 261 606 </a>
+            </li>
+        </ul>
+        <ul class="px-0 d-flex col-3 justify-content-end mb-0">
+            <li class="social-button"><a href="#" class="social"> <i class="bi bi-facebook"></i> </a></li>
+            <li class="social-button"><a href="#" class="social"> <i class="bi bi-instagram"></i> </a></li>
+            <li class="social-button"><a href="#" class="social"> <i class="bi bi-tiktok"></i> </a></li>
+            <li class="social-button"><a href="#" class="social"> <i class="bi bi-youtube"></i> </a></li>
+        </ul>
     </div>
-  </header>
+    <div class="bg-secondary-color black-color">
+        <div class="row py-2 mx-auto  px-0 d-flex justify-content-between container">
+            <div class="w-auto px-0">
+                <a href="#">
+                    <img src="images/Logo.png" alt="Logo" height="32" width="199">
+                </a>
+            </div>
+            <ul class="d-flex col-3 gap-2 justify-content-end px-0 mb-0">
+                <li class="mr-2">
+                    <a href="#" class="user-link bg-white-color d-flex">
+                        <i class="bi bi-heart"></i>
+                        <span class="count bg-primary-color white-color">3</span>
+                    </a>
+                </li>
+                <li class="mr-2">
+                    <a href="#" class="user-link bg-white-color d-flex">
+                        <i class="bi bi-cart3"></i>
+                        <span class="count bg-primary-color white-color">3</span>
+                    </a>
+                </li>
+                <li class="mr-2">
+                    <a href="#" class="user-link bg-white-color d-flex">
+                        <i class="bi bi-person"></i>
+                        <span>Mery</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row w-100 px-0 d-flex justify-content-between bg-secondary-color black-color">
+        <ul class="d-flex col-3 justify-content-end px-0">
+            <li class="nav-item">
+                <a class="nav-link gray-color" href="#">
+                    Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link gray-color" href="#">
+                    Home
+                </a>
+            </li>
+        </ul>
+        <div class="dropdown w-auto">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
 
-  <!-- SECTION CONTENT ( MAIN ) -->
-  <main class="px-3">
-    <h1>Cover your page.</h1>
-    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-    <p class="lead">
-      <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
-    </p>
-  </main>
+<!-- SECTION CONTENT ( MAIN ) -->
+<main>
+    <section class="position-relative main-banner bg-black-color">
+        <div class="position-absolute top-0 start-0 left-0 w-100 h-100">
+            <img class="w-100 h-100" src="images/banner.jpg" alt="Banner Image" height="400" width="1442"/>
+        </div>
+        <div class="row w-100 container mx-auto position-relative zindex-offcanvas-backdrop h-100 px-0 d-flex align-items-end">
+            <div class="col-md-4 col-12 px-0">
+                <h1 class="display-6 primary-color text-uppercase px-0 fw-bolder mb-2 pb-2 title">In gold we
+                    trust!!!</h1>
+                <p class="text-content fs-4 pb-1 white-color fw-normal mb-5 h-base ">Get the best prices for buying and
+                    selling gold
+                    with trust and transparency. <br> Visit us
+                    today!.</p>
+            </div>
+        </div>
+    </section>
 
-  <!-- SECTION FOOTER -->
-  <footer class="mt-auto text-white-50">
-    <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
-  </footer>
-</div>
+
+    <section class="bg-white-color quote-section">
+        <div class="container row px-0 mx-auto">
+            <h3 class="quote-title px-0">Welcome to Goldmember</h3>
+
+            <div class="shadow row align-items-center px-0 mx-auto content-wrapper">
+                <div class="col-md-3 px-2 text-md-end">
+                    <img src="images/quote-image.jpg" alt="Albert Papikyan" class="img-fluid">
+                </div>
+                <div class="col-md-9 content">
+                    <div>
+                        <p class="text-content">
+                            At Goldmember, we create handcrafted jewelry that blends elegance, artistry, and lasting
+                            quality. Each piece is designed to celebrate life’s special moments, from everyday
+                            sophistication to once-in-a-lifetime occasions. Discover timeless beauty, made just for you.
+                            At Goldmember, we create handcrafted jewelry that blends elegance, artistry, and lasting
+                            quality. Each piece is designed to celebrate life’s special moments, from everyday
+                            sophistication to once-in-a-lifetime occasions. Discover timeless beauty, made just for you.
+                        </p>
+
+                        <div class="d-flex justify-content-between align-content-center quote-person-info">
+                            <div>
+                                <strong class="quote-person-name">Albert Papikyan</strong>
+                                <span class="quote-person-position">Director of Goldmember</span>
+                            </div>
+
+                            <i class="bi bi-quote gray-color quote-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container px-0">
+        <div class="row text-center  cards-section">
+            <div class="col-md-4">
+                <div class="bg-primary-color text-white d-flex justify-content-center card-content shadow">
+                    <div class="card-icon">
+
+                    </div>
+                    <div>
+                        <h5 class="card-title">DONATE</h5>
+                        <p class="card-description">Support us with donation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bg-primary-color text-white d-flex justify-content-center card-content shadow">
+                    <div class="card-icon">
+
+                    </div>
+                    <div>
+                        <h5 class="card-title">AUCTION</h5>
+                        <p class="card-description">Bid now for a chance to own</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bg-primary-color text-white d-flex justify-content-center card-content shadow">
+                    <div class="card-icon">
+
+                    </div>
+                    <div>
+                        <h5 class="card-title">DIAMOND</h5>
+                        <p class="card-description">Pure brilliance, eternal sparkle.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="position-relative price-news-section">
+        <div class="position-absolute top-0 start-0 left-0 w-100 h-100 background-image">
+            <img class="w-100 h-100" src="images/black.jpg" alt="Banner Image" height="920" width="1440"/>
+        </div>
+        <div class="container">
+            <ul class="row text-center primary-color overview-cards">
+                <li class="col-md-3 overview-card">
+                    <h2 class="overview-title">232</h2>
+                    <p class="overview-content">ONLINE CLIENTS</p>
+                </li>
+                <li class="col-md-3 overview-card">
+                    <h2 class="overview-title">456</h2>
+                    <p class="overview-content">REGISTERED CLIENTS</p>
+                </li>
+                <li class="col-md-3 overview-card">
+                    <h2 class="overview-title">133</h2>
+                    <p class="overview-content">TODAY'S VISITS</p>
+                </li>
+                <li class="col-md-3 overview-card">
+                    <h2 class="overview-title">302</h2>
+                    <p class="overview-content">Hard Workers</p>
+                </li>
+            </ul>
+
+            <div class="row w-100">
+                <!-- Top News Section -->
+                <div class="col-md-6">
+                    <div class="card bg-dark text-white p-3">
+                        <h5 class="fw-bold">TOP NEWS</h5>
+                        <ul>
+                            <li class="news-item mb-3">
+                                <div class="d-flex">
+                                    <img src="https://picsum.photos/152/114" alt="News" class="img-fluid">
+                                    <div>
+                                        <h3>Lorem ipsum dolor</h3>
+                                        <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                            tellus, luctus nec ullamcorper mattis.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
 
 
-<script src="js/bootstrap.bundle.min.js"></script>
-  </body>
+                        <a href="#" class="text-info">Show more &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Local Prices Table -->
+                <div class="col-md-6">
+                    <div class="card bg-dark text-white p-3">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" href="#">LOCAL PRICES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-muted" href="#">GLOBAL PRICES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-muted" href="#">TRADE</a>
+                            </li>
+                        </ul>
+                        <table class="table text-white mt-3">
+                            <thead>
+                            <tr>
+                                <th>Gold</th>
+                                <th>Buy</th>
+                                <th>Sell</th>
+                                <th>Change</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>24K</td>
+                                <td>60.2</td>
+                                <td>61.3</td>
+                                <td class="text-success">↑ 0.2</td>
+                            </tr>
+                            <tr>
+                                <td>18K</td>
+                                <td>45.6</td>
+                                <td>46.7</td>
+                                <td class="text-danger">↓ 0.3</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <a href="#" class="text-info">Show more &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="contact-section position-relative py-5">
+        <div class="container">
+            <div class="row justify-content-center w-100">
+                <div class="col-md-6">
+                    <div class="contact-box p-4 rounded">
+                        <h4 class="fw-bold text-white">CONTACTS</h4>
+                        <hr class="border-light">
+                        <p class="mb-2"><strong>📍 Address:</strong> 20 Movses Khorenatsi Street, Yerevan 0018</p>
+                        <p class="mb-2"><strong>📧 Email:</strong> <a href="mailto:info@goldmember.am" class="text-info">info@goldmember.am</a>
+                        </p>
+                        <p class="mb-2"><strong>📞 Telephone:</strong> <br> (+374) 94 261 606 <br> (+374) 94 261 606</p>
+                        <p class="mb-0"><strong>⏰ Open Hours:</strong> <br> (+374) 94 261 606</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Background Map -->
+        <div class="map-background w-100">
+            <img class="w-100" src="images/map-min.jpg" alt="Map" height="694" width="1440">
+        </div>
+    </section>
+
+</main>
+
+<!-- SECTION FOOTER -->
+<footer class="bg-secondary-color text-white py-4">
+    <div class="container">
+        <div class="row w-100">
+            <!-- Contact Section -->
+            <div class="col-md-4">
+                <h5 class="fw-bold">CONTACTS</h5>
+                <p><strong>Address:</strong> 20 Movses Khorenatsi Street, Yerevan 0018</p>
+                <p><strong>Email:</strong> <a href="mailto:info@goldmember.am" class="text-info">info@goldmember.am</a>
+                </p>
+                <p><strong>Telephone:</strong> <br> (+374) 94 261 606 <br> (+374) 94 261 606</p>
+                <p><strong>Open Hours:</strong> <br> (+374) 94 261 606</p>
+            </div>
+
+            <!-- Pages Links -->
+            <div class="col-md-2">
+                <h5 class="fw-bold">PAGES</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Home</a></li>
+                    <li><a href="#" class="text-white">About</a></li>
+                    <li><a href="#" class="text-white">News</a></li>
+                    <li><a href="#" class="text-white">Contacts</a></li>
+                </ul>
+            </div>
+
+            <!-- Useful Links -->
+            <div class="col-md-2">
+                <h5 class="fw-bold">USEFUL LINKS</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Donate</a></li>
+                    <li><a href="#" class="text-white">Auction</a></li>
+                    <li><a href="#" class="text-white">Diamonds</a></li>
+                    <li><a href="#" class="text-white">Statistics</a></li>
+                </ul>
+            </div>
+
+            <!-- Contacts (Right Side) -->
+            <div class="col-md-4">
+                <h5 class="fw-bold">CONTACTS</h5>
+                <p><a href="mailto:info@goldmember.am" class="text-info">info@goldmember.am</a></p>
+                <p>(+374) 94 261 606</p>
+                <p>(+374) 94 261 606</p>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center mt-4">
+            <hr class="border-secondary">
+            <p class="mb-0">&copy; Goldmember - All rights reserved</p>
+        </div>
+    </div>
+</footer>
+
+
+</body>
 </html>

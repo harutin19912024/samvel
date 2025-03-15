@@ -1,0 +1,12 @@
+.main-banner {
+    height: 400px;
+
+    .title {
+        font-family: 'Roboto', sans-serif;
+        font-size: 38px;
+    }
+
+    .text-content {
+        line-height: 24px;
+    }
+}
