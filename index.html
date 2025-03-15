@@ -9,6 +9,7 @@
     <link href="/css/lib/bootstrap.min.css" rel="stylesheet">
     <link href="/css/lib/bootstrap-icons-min.css" rel="stylesheet">
     <link href="css/global.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
 
     <link rel="preload" href="fonts/roboto/Roboto-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/roboto/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -28,8 +29,8 @@
 
 <!--  &lt;!&ndash; SECTION HEADER &ndash;&gt;-->
 <header class="mb-auto bg-black header pt-1">
-    <div class="row py-2 px-0 mx-auto d-flex justify-content-between white-color container">
-        <ul class="d-flex gap-3 col-9 fw-light contact-box px-0 mb-0">
+    <div class="row py-2 px-0 mx-auto d-flex justify-content-between white-color flex-wrap container">
+        <ul class="d-flex gap-3 col-md-9 col-12 fw-light contact-box px-0 mb-0">
             <li class="me-4"><a href="mailto:info@goldmember.am"> <i class="bi bi-envelope-fill pe-2"></i>info@goldmember.am</a>
             </li>
             <li class="me-4"><a href="tel:+37494261605"> <i class="bi bi-telephone-fill pe-2"></i> (+374) 94 261 605</a>
@@ -37,7 +38,7 @@
             <li class="me-4"><a href="tel:+37494261606"> <i class="bi bi-telephone-fill pe-2"></i>(+374) 94 261 606 </a>
             </li>
         </ul>
-        <ul class="px-0 d-flex col-3 justify-content-end mb-0">
+        <ul class="px-0 d-flex col-3 justify-content-start mt-md-0 mt-3 mb-md-0 mb-2 justify-content-md-end mb-0">
             <li class="social-button"><a href="#" class="social"> <i class="bi bi-facebook"></i> </a></li>
             <li class="social-button"><a href="#" class="social"> <i class="bi bi-instagram"></i> </a></li>
             <li class="social-button"><a href="#" class="social"> <i class="bi bi-tiktok"></i> </a></li>
@@ -45,7 +46,7 @@
         </ul>
     </div>
     <div class="bg-secondary-color black-color">
-        <div class="row py-2 mx-auto  px-0 d-flex justify-content-between container">
+        <div class="row mx-auto px-0 d-flex justify-content-between container header-action-box">
             <div class="w-auto px-0">
                 <a href="#">
                     <img src="images/Logo.png" alt="Logo" height="32" width="199">
@@ -73,30 +74,47 @@
             </ul>
         </div>
     </div>
-    <div class="row w-100 px-0 d-flex justify-content-between bg-secondary-color black-color">
-        <ul class="d-flex col-3 justify-content-end px-0">
-            <li class="nav-item">
-                <a class="nav-link gray-color" href="#">
-                    Home
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link gray-color" href="#">
-                    Home
-                </a>
-            </li>
-        </ul>
-        <div class="dropdown w-auto">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                Dropdown button
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+    <div class="bg-secondary-color black-color">
+        <div class="container px-0">
+            <div class="row d-flex justify-content-between">
+                <ul class="d-flex col-3 px-0">
+                    <li class="nav-item">
+                        <a class="nav-item-link gray-color" href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-link gray-color" href="#">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-link gray-color" href="#">
+                            News
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-item-link gray-color" href="#">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                <div class="dropdown w-auto ">
+                    <button class="btn primary-color dropdown-toggle pe-0" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                        Eng
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Arm</a></li>
+                        <li><a class="dropdown-item" href="#">Ru</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
+    </div>
+    <div class="marquee-container bg-secondary-color overflow-hidden">
+        <div class="marquee-text">Running line text goes here...</div>
     </div>
 </header>
 
@@ -157,7 +175,7 @@
             <div class="col-md-4">
                 <div class="bg-primary-color text-white d-flex justify-content-center card-content shadow">
                     <div class="card-icon">
-
+                        <i class="bi bi-quote gray-color quote-icon"></i>
                     </div>
                     <div>
                         <h5 class="card-title">DONATE</h5>
@@ -168,7 +186,7 @@
             <div class="col-md-4">
                 <div class="bg-primary-color text-white d-flex justify-content-center card-content shadow">
                     <div class="card-icon">
-
+                        <i class="bi bi-quote gray-color quote-icon"></i>
                     </div>
                     <div>
                         <h5 class="card-title">AUCTION</h5>
@@ -179,7 +197,7 @@
             <div class="col-md-4">
                 <div class="bg-primary-color text-white d-flex justify-content-center card-content shadow">
                     <div class="card-icon">
-
+                        <i class="bi bi-quote gray-color quote-icon"></i>
                     </div>
                     <div>
                         <h5 class="card-title">DIAMOND</h5>
@@ -193,8 +211,8 @@
         <div class="position-absolute top-0 start-0 left-0 w-100 h-100 background-image">
             <img class="w-100 h-100" src="images/black.jpg" alt="Banner Image" height="920" width="1440"/>
         </div>
-        <div class="container">
-            <ul class="row text-center primary-color overview-cards">
+        <div class="container px-0">
+            <ul class="row text-center primary-color overview-cards px-2">
                 <li class="col-md-3 overview-card">
                     <h2 class="overview-title">232</h2>
                     <p class="overview-content">ONLINE CLIENTS</p>
@@ -213,35 +231,68 @@
                 </li>
             </ul>
 
-            <div class="row w-100">
+            <div class="row">
                 <!-- Top News Section -->
-                <div class="col-md-6">
-                    <div class="card bg-dark text-white p-3">
-                        <h5 class="fw-bold">TOP NEWS</h5>
+                <div class="col-md-5">
+                    <div class="card shadow text-white bg-black-color news-card">
+                        <h5 class="news-headline">TOP NEWS</h5>
                         <ul>
-                            <li class="news-item mb-3">
-                                <div class="d-flex">
-                                    <img src="https://picsum.photos/152/114" alt="News" class="img-fluid">
-                                    <div>
-                                        <h3>Lorem ipsum dolor</h3>
-                                        <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                                            tellus, luctus nec ullamcorper mattis.</p>
+                            <li class="news-item">
+                                <a class="d-flex">
+                                    <div class="news-item-image">
+                                        <img src="https://picsum.photos/152/114" alt="News" class="img-fluid">
                                     </div>
-                                </div>
+                                    <div class="text">
+                                        <h3 class="news-item-title">Lorem ipsum dolor</h3>
+                                        <p class="news-item-text">Lorem ipsum dolor sit amet. Id consectetur tempora rem
+                                            ratione magnam qui voluptatem aperiam et autem quia. Sed voluptatum
+                                            cupiditate aut ...Lorem ipsum dolor sit amet. Id consectetur tempora rem
+                                            ratione magnam qui voluptatem aperiam et autem quia. Sed voluptatum
+                                            cupiditate aut ...</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="news-item">
+                                <a class="d-flex">
+                                    <div class="news-item-image">
+                                        <img src="https://picsum.photos/152/114" alt="News" class="img-fluid">
+                                    </div>
+                                    <div class="text">
+                                        <h3 class="news-item-title">Lorem ipsum dolor</h3>
+                                        <p class="news-item-text">Lorem ipsum dolor sit amet. Id consectetur tempora rem
+                                            ratione magnam qui voluptatem aperiam et autem quia. Sed voluptatum
+                                            cupiditate aut ...Lorem ipsum dolor sit amet. Id consectetur tempora rem
+                                            ratione magnam qui voluptatem aperiam et autem quia. Sed voluptatum
+                                            cupiditate aut ...</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="news-item">
+                                <a class="d-flex">
+                                    <div class="news-item-image">
+                                        <img src="https://picsum.photos/152/114" alt="News" class="img-fluid">
+                                    </div>
+                                    <div class="text">
+                                        <h3 class="news-item-title">Lorem ipsum dolor</h3>
+                                        <p class="news-item-text">Lorem ipsum dolor sit amet. Id consectetur tempora rem
+                                            ratione magnam qui voluptatem aperiam et autem quia. Sed voluptatum
+                                            cupiditate aut ...Lorem ipsum dolor sit amet. Id consectetur tempora rem
+                                            ratione magnam qui voluptatem aperiam et autem quia. Sed voluptatum
+                                            cupiditate aut ...</p>
+                                    </div>
+                                </a>
                             </li>
                         </ul>
-
-
                         <a href="#" class="text-info">Show more &rarr;</a>
                     </div>
                 </div>
 
                 <!-- Local Prices Table -->
-                <div class="col-md-6">
-                    <div class="card bg-dark text-white p-3">
+                <div class="col-md-7 ps-4 ">
+                    <div class="card shadow bg-black-color table-nav-box">
                         <ul class="nav nav-tabs">
                             <li class="nav-item">
-                                <a class="nav-link active text-white" href="#">LOCAL PRICES</a>
+                                <a class="nav-link is_active text-white" href="#">LOCAL PRICES</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-muted" href="#">GLOBAL PRICES</a>
@@ -250,30 +301,40 @@
                                 <a class="nav-link text-muted" href="#">TRADE</a>
                             </li>
                         </ul>
-                        <table class="table text-white mt-3">
-                            <thead>
-                            <tr>
-                                <th>Gold</th>
-                                <th>Buy</th>
-                                <th>Sell</th>
-                                <th>Change</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>24K</td>
-                                <td>60.2</td>
-                                <td>61.3</td>
-                                <td class="text-success">↑ 0.2</td>
-                            </tr>
-                            <tr>
-                                <td>18K</td>
-                                <td>45.6</td>
-                                <td>46.7</td>
-                                <td class="text-danger">↓ 0.3</td>
-                            </tr>
-                            </tbody>
-                        </table>
+                        <div class="table primary-color">
+                            <div class="table-header">
+                                <div>Gold</div>
+                                <div>Buy</div>
+                                <div>Sell</div>
+                                <div>Change</div>
+                            </div>
+                            <div class="table-body">
+                                <div class="table-row">
+                                    <div>24K</div>
+                                    <div>60.2</div>
+                                    <div>61.3</div>
+                                    <div><span class="text-success">↑</span> 0.2</div>
+                                </div>
+                                <div class="table-row">
+                                    <div>18K</div>
+                                    <div>45.6</div>
+                                    <div>46.7</div>
+                                    <div><span class="text-danger">↓</span> 0.3</div>
+                                </div>
+                                <div class="table-row">
+                                    <div>18K</div>
+                                    <div>45.6</div>
+                                    <div>46.7</div>
+                                    <div><span class="text-danger">↓</span> 0.3</div>
+                                </div>
+                                <div class="table-row">
+                                    <div>18K</div>
+                                    <div>45.6</div>
+                                    <div>46.7</div>
+                                    <div><span class="text-danger">↓</span> 0.3</div>
+                                </div>
+                            </div>
+                        </div>
                         <a href="#" class="text-info">Show more &rarr;</a>
                     </div>
                 </div>
@@ -307,7 +368,7 @@
 </main>
 
 <!-- SECTION FOOTER -->
-<footer class="bg-secondary-color text-white py-4">
+<footer class="bg-secondary-color gray-color py-4">
     <div class="container">
         <div class="row w-100">
             <!-- Contact Section -->

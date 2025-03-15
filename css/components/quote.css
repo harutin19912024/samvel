@@ -55,9 +55,10 @@
 
     .quote-icon {
         display: block;
-        background: red;
         width: 95px;
+        font-size: 150px;
         height: 80px;
+        color: var(--primary-color);
+        transform: rotate(180deg) translate(-27px, -69px);
     }
-
 }

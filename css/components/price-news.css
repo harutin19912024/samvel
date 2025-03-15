@@ -2,6 +2,7 @@
     font-family: 'Roboto', sans-serif;
     margin-top: -80px;
     padding-top: 140px;
+    padding-bottom: 88px;
 
     .background-image {
         position: relative;
@@ -32,5 +33,116 @@
         font-size: 20px;
         line-height: 22px;
         text-transform: uppercase;
+    }
+
+    .news-headline {
+        font-size: 20px;
+        line-height: 20px;
+        color: var(--primary-color);
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+    }
+
+    .news-card {
+        padding: 29px;
+
+        .news-item-image {
+            flex: 0 0 32%;
+        }
+
+        .text {
+            flex: 1;
+            padding-left: 20px;
+        }
+
+        .news-item {
+            margin-bottom: 13px;
+        }
+
+        .news-item-text {
+            width: 100%;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;
+            overflow: hidden;
+        }
+
+        .news-item-text, .news-item-title {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .text-info {
+            margin-left: auto;
+            font-size: 14px;
+            font-weight: 400;
+            padding: 4px 0;
+        }
+    }
+
+    .table-nav-box {
+        padding: 29px 31px 15px 31px;
+        height: 100%;
+    }
+
+    .nav-tabs {
+        border: none;
+
+        .nav-link {
+            font-size: 20px;
+            line-height: 22px;
+            font-weight: 400;
+            border-radius: 4px;
+            padding: 10px 9px;
+            margin-right: 6px;
+
+            &.is_active {
+                background-color: var(--primary-color);
+            }
+        }
+    }
+
+    .table {
+        font-size: 12px;
+        line-height: 16px;
+        font-family: 'Inter', sans-serif;
+        margin-top: 30px;
+        border-radius: 4px;
+        overflow: hidden;
+        height: 100%;
+    }
+
+    .table-header {
+        background-color: var(--table-header-color);
+        font-weight: 700;
+        display: flex;
+        border-bottom: solid 2px var(--primary-color);
+
+        > div {
+            flex: 1;
+            padding: 12px 14px;
+        }
+    }
+
+    .table-body {
+        background-color: var(--table-body-color);
+        font-weight: 400;
+
+        .table-row {
+            display: flex;
+            border-bottom: solid 1px var(--primary-color);
+
+            > div {
+                flex: 1;
+                padding: 12px 14px;
+            }
+        }
+    }
+
+    .text-info {
+        margin-left: auto;
+        font-size: 14px;
+        font-weight: 400;
     }
 }

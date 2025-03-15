@@ -16,7 +16,16 @@
     font-family: 'Roboto', sans-serif;
 }
 
-p {
+p, ul, ol {
     margin-bottom: 0;
 }
 
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
