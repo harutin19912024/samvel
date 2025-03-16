@@ -2,7 +2,7 @@
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
-    
+
     @media screen and (max-width: 1024px) {
         font-size: 14px;
     }
@@ -59,6 +59,7 @@
             @media screen and (max-width: 1024px) {
                 padding-top: 20px;
             }
+
             &.col-one {
                 flex: 1;
                 padding-top: 6px;
@@ -96,6 +97,7 @@
         @media screen and (max-width: 1024px) {
             margin-bottom: 6px;
         }
+
         a {
             font-family: 'Inter', sans-serif;
         }
@@ -116,6 +118,7 @@
             }
         }
     }
+
     .copy {
         padding: 22px 20px;
         margin-top: 38px;

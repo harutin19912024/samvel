@@ -1,5 +1,6 @@
 .header {
     font-family: 'Inter', sans-serif;
+    overflow: hidden;
 
     .social {
         width: 20px;
