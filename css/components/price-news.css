@@ -10,12 +10,13 @@
     }
 
     .overview-cards {
-        margin-bottom: 90px;
+        margin-bottom: 70px;
     }
 
     .overview-card {
         border-left: solid 1px var(--primary-color);
         padding-top: 23px;
+        padding-bottom: 15px;
 
         &:first-child {
             border: none;
@@ -38,14 +39,13 @@
     .news-headline {
         font-size: 20px;
         line-height: 20px;
-        color: var(--primary-color);
         font-weight: 500;
         text-transform: uppercase;
         margin-bottom: 16px;
     }
 
     .news-card {
-        padding: 29px;
+        padding: 29px 29px 13px;
 
         .news-item-image {
             flex: 0 0 32%;

@@ -3,10 +3,13 @@
 
     .title {
         font-family: 'Roboto', sans-serif;
+        font-weight: 400;
         font-size: 38px;
     }
 
     .text-content {
         line-height: 24px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
     }
 }

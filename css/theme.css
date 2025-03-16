@@ -2,6 +2,10 @@
     color: var(--primary-color);
 }
 
+.primary-alternate-color {
+    color: var(--primary-alternate-color);
+}
+
 .secondary-color {
     color: var(--secondary-color);
 }
@@ -21,6 +25,11 @@
 .bg-primary-color {
     background-color: var(--primary-color);
 }
+
+.bg-primary-alternate-color {
+    background-color: var(--primary-alternate-color);
+}
+
 
 .bg-secondary-color {
     background-color: var(--secondary-color);

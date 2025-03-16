@@ -14,7 +14,7 @@
         font-size: 12px;
         margin-left: 13px;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1024px) {
             margin-left: 0;
             margin-right: 10px;
         }
@@ -32,6 +32,12 @@
         font-size: 13px;
         line-height: 16px;
         font-weight: 400;
+
+        span {
+            @media screen and (max-width: 1024px) {
+                display: none;
+            }
+        }
     }
 
     .header-action-box {
@@ -61,6 +67,14 @@
         line-height: 24px;
         border-radius: 12px;
 
+        @media screen and (max-width: 1024px) {
+            padding: 4px 6px;
+            gap: 6px;
+            font-size: 12px;
+            line-height: 18px;
+            border-radius: 8px;
+        }
+
         .count {
             height: 20px;
             width: 20px;
@@ -77,6 +91,12 @@
             height: 24px;
             width: 24px;
             display: flex;
+
+            @media screen and (max-width: 1024px) {
+                font-size: 18px;
+                height: 20px;
+                width: 20px;
+            }
         }
     }
 
@@ -89,7 +109,11 @@
         white-space: nowrap;
         position: relative;
         padding-top: 10px;
-        padding-bottom: 25px;
+        padding-bottom: 10px;
+    }
+
+    .white-line {
+        height: 14px;
     }
 
     .marquee-text {
