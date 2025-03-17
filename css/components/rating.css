@@ -1,0 +1,37 @@
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+
+
+    input:checked ~ label,
+    label:hover,
+    label:hover ~ label {
+        color: var(--primary-color);
+
+        .bi-star {
+            display: none;
+        }
+
+        .bi-star-fill {
+            display: block;
+        }
+    }
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    color: var(--gray-color-lighter);
+    cursor: pointer;
+    margin-left: 4px;
+    transition: all 0.3s ease-in-out;
+    width: 16px;
+    height: 16px;
+
+    .bi-star-fill {
+        display: none;
+    }
+}
