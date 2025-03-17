@@ -18,7 +18,7 @@
         padding-top: 23px;
         padding-bottom: 15px;
 
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 768px) {
             border-left: none;
             border-bottom: solid 1px var(--primary-color);
         }
@@ -26,13 +26,13 @@
         &:first-child {
             border: none;
 
-            @media screen and (max-width: 1024px) {
+            @media screen and (max-width: 768px) {
                 border-bottom: solid 1px var(--primary-color);
             }
         }
 
         &:last-of-type {
-            @media screen and (max-width: 1024px) {
+            @media screen and (max-width: 768px) {
                 border: none;
             }
         }
@@ -46,13 +46,13 @@
     }
 
     .overview-content {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 22px;
         text-transform: uppercase;
     }
 
     .news-headline {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 20px;
         font-weight: 500;
         text-transform: uppercase;
@@ -84,7 +84,7 @@
         }
 
         .news-item-text, .news-item-title {
-            font-size: 14px;
+            font-size: 16px;
             line-height: 20px;
         }
 
@@ -111,9 +111,26 @@
             border-radius: 4px;
             padding: 10px 9px;
             margin-right: 6px;
+            border-color: transparent;
+            color: var(--gray-color-lighter);
 
-            &.is_active {
+            @media screen and (max-width: 1024px) {
+                font-size: 14px;
+                line-height: 18px;
+                padding: 6px 4px;
+                margin-right: 4px;
+            }
+
+            @media screen and (max-width: 768px) {
+                font-size: 12px;
+                line-height: 16px;
+                padding: 4px;
+            }
+
+
+            &.active {
                 background-color: var(--primary-color);
+                color: var(--white-color);
             }
         }
     }
@@ -126,6 +143,11 @@
         border-radius: 4px;
         overflow: hidden;
         height: 100%;
+        display: none;
+
+        &.active {
+            display: block;
+        }
     }
 
     .table-header {
