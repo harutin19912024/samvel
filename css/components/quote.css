@@ -20,7 +20,7 @@
     }
 
 
-    .text-content {
+    .text-content p:nth-child(1) {
         font-size: 20px;
         line-height: 30px;
         font-weight: 400;
