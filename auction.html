@@ -29,7 +29,7 @@
 
 <!--  &lt;!&ndash; SECTION HEADER &ndash;&gt;-->
 <header class="mb-auto header">
-    <div class="bg-black py-1">
+    <div class="bg-black">
         <div class="row py-2 px-sm-0 mx-auto d-flex justify-content-between white-color flex-wrap container">
             <ul class="d-flex gap-3 col-md-9 col-6 fw-light contact-box px-0 ps-2 ps-sm-0 mb-0">
                 <li class="me-4"><a href="mailto:info@goldmember.am"> <i class="bi bi-envelope-fill pe-1"></i><span>info@goldmember.am</span></a>
@@ -126,10 +126,22 @@
 
 <!-- SECTION CONTENT ( MAIN ) -->
 <main>
-    <section class="container">
-        <ul class="row product">
+    <section class="container breadcrumb-container py-2 px-sm-0">
+        <div class="row px-0">
+            <div class="col-sm-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb ">
+                        <li class="breadcrumb-item"><a href="#"><i class="bi bi-house-door"></i>Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <section class="container py-2 px-sm-0">
+        <ul class="row product px-0">
             <li class="col-lg-4 col-sm-12 col-md-6 product-item">
-                <div class="w-100 shadow">
+                <div class="w-100 shadow h-100">
                     <a href="#" aria-label="Visit detail" class="position-relative product-link">
                         <div class="position-relative product-img img-box">
                             <img src="https://placehold.co/422x265" alt="Product Item" class="img-fluid">
@@ -143,18 +155,75 @@
                                 <h3 class="product-name">Lorem ipsum dolor sit amet. qui magnam quos nam doloremque
                                     tempora. </h3>
                                 <div class="d-flex justify-content-between">
-                                    <span>Necklaces</span>
+                                    <span class="category">Necklaces</span>
                                     <div class="star-rating">
                                         <input type="radio" id="star5" name="rating" value="5">
-                                        <label for="star5"><i class="bi bi-star"></i><i class="bi bi-star-fill"></i></label>
+                                        <label for="star5"><i class="bi bi-star"></i><i
+                                                class="bi bi-star-fill"></i></label>
                                         <input type="radio" id="star4" name="rating" value="4">
-                                        <label for="star4"><i class="bi bi-star"></i><i class="bi bi-star-fill"></i></label>
+                                        <label for="star4"><i class="bi bi-star"></i><i
+                                                class="bi bi-star-fill"></i></label>
                                         <input type="radio" id="star3" name="rating" value="3">
-                                        <label for="star3"><i class="bi bi-star"></i><i class="bi bi-star-fill"></i></label>
+                                        <label for="star3"><i class="bi bi-star"></i><i
+                                                class="bi bi-star-fill"></i></label>
                                         <input type="radio" id="star2" name="rating" value="2">
-                                        <label for="star2"><i class="bi bi-star"></i><i class="bi bi-star-fill"></i></label>
+                                        <label for="star2"><i class="bi bi-star"></i><i
+                                                class="bi bi-star-fill"></i></label>
                                         <input type="radio" id="star1" name="rating" value="1">
-                                        <label for="star1"><i class="bi bi-star"></i><i class="bi bi-star-fill"></i></label>
+                                        <label for="star1"><i class="bi bi-star"></i><i
+                                                class="bi bi-star-fill"></i></label>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="deadline-more-box">
+                                <div class="deadline-box danger-text">
+                                    <i class="bi bi-clock"></i>
+                                    <span>00:07:41</span>
+                                </div>
+                                <button class="button secondary-button view-more-button">More<i class="bi bi-eye"></i></button>
+                                <button class="button primary-button auction-button">
+                                    <span>֏</span>
+                                    <span>10.000.000</span>
+                                    <i class="bi bi-hammer"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="col-lg-4 col-sm-12 col-md-6 product-item">
+                <div class="w-100 shadow h-100">
+                    <a href="#" aria-label="Visit detail" class="position-relative product-link">
+                        <div class="position-relative product-img img-box">
+                            <img src="https://placehold.co/422x265" alt="Product Item" class="img-fluid">
+                            <button type="button" aria-label="Toggle Favorite"
+                                    class="bg-white-color button icon-button position-absolute zindex-offcanvas-backdrop">
+                                <i class="bi bi-heart-fill"></i>
+                            </button>
+                        </div>
+                        <div class="content">
+                            <div class="description">
+                                <h3 class="product-name">Lorem ipsum dolor sit amet. qui magnam quos nam doloremque
+                                    tempora. </h3>
+                                <div class="d-flex justify-content-between">
+                                    <span class="category">Necklaces</span>
+                                    <div class="star-rating">
+                                        <input type="radio" id="star5" name="rating" value="5">
+                                        <label for="star5"><i class="bi bi-star"></i><i
+                                                class="bi bi-star-fill"></i></label>
+                                        <input type="radio" id="star4" name="rating" value="4">
+                                        <label for="star4"><i class="bi bi-star"></i><i
+                                                class="bi bi-star-fill"></i></label>
+                                        <input type="radio" id="star3" name="rating" value="3">
+                                        <label for="star3"><i class="bi bi-star"></i><i
+                                                class="bi bi-star-fill"></i></label>
+                                        <input type="radio" id="star2" name="rating" value="2">
+                                        <label for="star2"><i class="bi bi-star"></i><i
+                                                class="bi bi-star-fill"></i></label>
+                                        <input type="radio" id="star1" name="rating" value="1">
+                                        <label for="star1"><i class="bi bi-star"></i><i
+                                                class="bi bi-star-fill"></i></label>
                                     </div>
                                 </div>
 
@@ -164,13 +233,36 @@
                                     <i class="bi bi-clock"></i>
                                     <span>23 April</span>
                                 </div>
-                                <button class="button view-more-button"><i class="bi bi-eye"></i> View more</button>
+                                <button class="button secondary-button view-more-button">More<i class="bi bi-eye"></i></button>
                             </div>
                         </div>
                     </a>
                 </div>
             </li>
+
         </ul>
+    </section>
+
+    <section class="container pagination-section">
+        <div class="row">
+            <div class="col-sm-12">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-left"></i></a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">...</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#">6</a></li>
+                        <li class="page-item"><a class="page-link" href="#">7</a></li>
+                        <li class="page-item"><a class="page-link" href="#">8</a></li>
+                        <li class="page-item"><a class="page-link" href="#">...</a></li>
+                        <li class="page-item"><a class="page-link" href="#">20</a></li>
+                        <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-right"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </section>
 
 </main>
@@ -240,6 +332,7 @@
 
 
     </div>
+
     <!-- Copyright -->
     <div class="text-center bg-white-color copy">
         <p class="mb-0">&copy; Goldmember - All rights reserved</p>

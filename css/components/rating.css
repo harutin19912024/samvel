@@ -3,7 +3,6 @@
     flex-direction: row-reverse;
     justify-content: center;
 
-
     input:checked ~ label,
     label:hover,
     label:hover ~ label {
@@ -28,8 +27,8 @@
     cursor: pointer;
     margin-left: 4px;
     transition: all 0.3s ease-in-out;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
 
     .bi-star-fill {
         display: none;
