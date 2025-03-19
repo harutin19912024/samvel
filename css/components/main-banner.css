@@ -1,9 +1,18 @@
 .main-banner {
     height: 400px;
 
+    @media screen and (max-width: 1024px) {
+        height: 100vh;
+    }
+
     img {
         object-fit: contain;
+
+        @media screen and (max-width: 1024px) {
+            object-fit: cover;
+        }
     }
+
     .title {
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
@@ -17,6 +26,11 @@
 
         @media screen and (max-width: 1024px) {
             line-height: 26px;
+        }
+
+        @media screen and (max-width: 768px) {
+            line-height: 26px;
+            font-size: 20px !important;
         }
     }
 }
