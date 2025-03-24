@@ -125,27 +125,47 @@
         height: 14px;
     }
 
-    .marquee-text {
-        display: inline-block;
-        font-size: 14px;
-        font-family: 'Inter', sans-serif;
-        animation: marquee 20s linear infinite;
-        color: var(--gray-color);
-        width: 100%;
+    .navbar-collapse {
+        .navbar-toggler {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+
+    .navbar-toggler {
+        padding: 10px;
+        font-size: 20px;
+
+        &.collapsed {
+            .bi-list {
+                display: flex;
+            }
+
+            .bi-x {
+                display: none;
+            }
+        }
+    }
+
+    .navbar-mobile {
+        transition: transform 0.3s ease-in-out;
+
+        &.show {
+            transform: translateX(0);
+        }
+
+        @media screen and (max-width: 768px) {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            margin: 0 !important;
+            background-color: #fff;
+            z-index: 100;
+            transform: translateX(-100%);
+        }
     }
 }
 
-#canvas-wrapper {
-    width: 100%;
-    height: 410px; /* Ensure this is set */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #f8f9fa; /* Optional: Just to make it visible */
-}
-
-#demo-canvas {
-    display: block; /* Removes extra spacing */
-    width: 100%;
-    height: 100%;
-}

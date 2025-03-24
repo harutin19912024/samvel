@@ -34,11 +34,11 @@
     <div class="bg-black">
         <div class="row py-2 px-sm-0 mx-auto d-flex justify-content-between white-color flex-wrap container">
             <ul class="d-flex gap-3 col-md-9 col-6 fw-light contact-box px-0 ps-2 ps-sm-0 mb-0">
-                <li class="me-4"><a href="mailto:info@goldmember.am"> <i class="bi bi-envelope-fill pe-1"></i><span>info@goldmember.am</span></a>
+                <li class="me-md-4"><a href="mailto:info@goldmember.am"> <i class="bi bi-envelope-fill pe-1"></i><span>info@goldmember.am</span></a>
                 </li>
-                <li class="me-4"><a href="tel:+37494261605"> <i class="bi bi-telephone-fill pe-1"></i> <span>(+374) 94 261 605</span></a>
+                <li class="me-md-4"><a href="tel:+37494261605"> <i class="bi bi-telephone-fill pe-1"></i> <span>(+374) 94 261 605</span></a>
                 </li>
-                <li class="me-4"><a href="tel:+37494261606"> <i class="bi bi-telephone-fill pe-1"></i><span>(+374) 94 261 606 </span></a>
+                <li class="me-md-4"><a href="tel:+37494261606"> <i class="bi bi-telephone-fill pe-1"></i><span>(+374) 94 261 606 </span></a>
                 </li>
             </ul>
             <ul class="px-0 d-flex col-md-3 col-6 justify-content-end justify-content-md-start mt-0 mb-0 justify-content-md-end mb-0">
@@ -80,9 +80,19 @@
         </div>
     </div>
     <div class="bg-white-color black-color">
-        <div class="container pe-0">
-            <div class="row d-flex justify-content-between">
-                <ul class="d-flex col-6 py-0 ps-sm-0 ps-3">
+        <div class="container ps-sm-0 ps-2 pe-0">
+            <button class="navbar-toggler d-md-none d-flex collapsed ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <div class="row d-flex flex-column flex-md-row pt-md-0 pt-6 pb-md-0 pb-6 justify-content-center  justify-content-md-between collapse navbar-collapse navbar-mobile" id="navbarNav">
+                <button class="navbar-toggler d-md-none d-flex collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <i class="bi bi-x-lg"></i>
+                </button>
+                <ul class="d-flex col-md-6 cold-12 py-0 ps-md-0 ps-3 flex-column flex-md-row">
                     <li class="nav-item">
                         <a class="nav-item-link gray-color" href="#">
                             Home
@@ -105,7 +115,8 @@
                         </a>
                     </li>
                 </ul>
-                <div class="dropdown w-auto ">
+
+                <div class="dropdown w-auto mt-5 mt-md-0 ps-md-3 ps-0 me-md-0 me-auto">
                     <button class="btn primary-color dropdown-toggle pe-md-0" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                         Eng
