@@ -191,48 +191,48 @@
     </section>
 
     <section class="container px-3 px-md-0">
-        <div class="row text-center  cards-section">
-            <div class="col-md-4 pb-md-0 pb-4">
-                <div class="bg-primary-color text-white d-flex justify-content-center card-content shadow">
-                    <div class="card-icon">
-                        <img src="images/icons/money.svg" alt="Icon">
-                    </div>
-                    <div>
-                        <a href="doante">
-                            <h5 class="card-title">DONATE</h5>
-                            <p class="card-description text-start">Support us with donation</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 pb-md-0 pb-4">
-                <div class="bg-primary-color text-white d-flex justify-content-center card-content shadow">
-                    <div class="card-icon">
-                        <img src="images/icons/auction.svg" alt="Icon">
-                    </div>
-                    <div>
-                        <a href="auction.html">
-                            <h5 class="card-title">AUCTION</h5>
-                            <p class="card-description text-start">Bid now for a chance to own</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 pb-md-0 pb-4">
-                <div class="bg-primary-color text-white d-flex justify-content-center card-content shadow">
-                    <div class="card-icon">
-                        <img src="images/icons/offer.svg" alt="Icon">
-                    </div>
-                    <div>
-                        <a href="auction">
-                            <h5 class="card-title">Best offer</h5>
-                            <p class="card-description text-start">Best deal! Act now!</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+	    <div class="row text-center  cards-section">
+		<div class="col-md-4 pb-md-0 pb-4">
+		    <a href="/<?=Yii::$app->language?>/donate">
+		        <div class="bg-primary-color text-white d-flex justify-content-center card-content shadow">
+		            <div class="card-icon">
+		                <img src="/images/icons/money.svg" alt="Icon" >
+		            </div>
+		            <div>
+		                <h5 class="card-title">Donate</h5>
+		                <p class="card-description text-start">Support us with donation</p>
+		            </div>
+		        </div>
+		    </a>
+		</div>
+		<div class="col-md-4 pb-md-0 pb-4">
+		    <a href="/<?=Yii::$app->language?>/auction" >
+		        <div class="bg-primary-color text-white d-flex justify-content-center card-content shadow">
+		            <div class="card-icon">
+		                <img src="/images/icons/auction.svg" alt="Icon" >
+		            </div>
+		            <div>
+		                <h5 class="card-title">Auction</h5>
+		                <p class="card-description text-start">Bid now for a chance to own</p>
+		            </div>
+		        </div>
+		    </a>
+		</div>
+		<div class="col-md-4 pb-md-0 pb-4">
+		    <a href="/<?=Yii::$app->language?>/best-offer">
+		        <div class="bg-primary-color text-white d-flex justify-content-center card-content shadow">
+		            <div class="card-icon">
+		                <img src="/images/icons/offer.svg" alt="Icon">
+		            </div>
+		            <div>
+		                <h5 class="card-title">Best offer</h5>
+		                <p class="card-description text-start">Best deal! Act now!</p>
+		            </div>
+		        </div>
+		    </a>
+		</div>
+	    </div>
+	</section>
     <section class="position-relative price-news-section overflow-hidden">
         <div class="position-absolute top-0 start-0 left-0 w-100 h-100 background-image">
             <img class="w-100 h-100" src="images/black.jpg" alt="Banner Image" height="920" width="1440"/>
