@@ -14,6 +14,16 @@
             font-size: 17px;
             height: 20px;
         }
+
+        &.large {
+            width: 50px;
+            height: 38px;
+
+            i {
+                font-size: 20px;
+            }
+
+        }
     }
 
     &:hover {
@@ -24,7 +34,8 @@
         }
     }
 
-    &.primary-button, &.secondary-button {
+    &.primary-button,
+    &.secondary-button {
         font-size: 14px;
         line-height: 16px;
         text-transform: uppercase;
@@ -37,12 +48,14 @@
             padding-right: 5px;
             font-size: 12px;
         }
+
         i {
             margin-left: 8px;
 
             @media screen and (max-width: 1400px) {
                 margin-left: 5px;
             }
+
             &:before {
                 transition: all 0.3s ease-in-out;
             }
@@ -59,5 +72,11 @@
     &.primary-button {
         background-color: var(--primary-color);
         color: var(--white-color);
+    }
+
+    &.large {
+        padding: 7px;
+        font-size: 24px;
+        line-height: 26px;
     }
 }

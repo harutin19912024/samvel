@@ -85,7 +85,8 @@
             margin-bottom: 13px;
         }
 
-        .news-item-text, .news-item-title {
+        .news-item-text,
+        .news-item-title {
             font-size: 16px;
             line-height: 20px;
             color: var(--primary-alternate-color);
@@ -106,79 +107,17 @@
         height: 100%;
     }
 
-    .nav-tabs {
-        border: none;
-
-        .nav-link {
-            font-size: 18px;
-            line-height: 22px;
-            font-weight: 400;
-            border-radius: 4px;
-            padding: 10px 9px;
-            margin-right: 6px;
-            border-color: transparent;
-            color: var(--gray-color-lighter);
-
-            @media screen and (max-width: 1024px) {
-                font-size: 14px;
-                line-height: 18px;
-                padding: 6px 4px;
-                margin-right: 4px;
-            }
-
-            @media screen and (max-width: 768px) {
-                font-size: 12px;
-                line-height: 16px;
-                padding: 4px;
-            }
-
-
-            &.active {
-                background-color: var(--primary-color);
-                color: var(--white-color);
-            }
-        }
-    }
-
-    .table {
-        font-size: 12px;
-        line-height: 16px;
-        font-family: 'Inter', sans-serif;
-        margin-top: 30px;
-        border-radius: 4px;
-        overflow: hidden;
-        height: 100%;
-        display: none;
-
-        &.active {
-            display: block;
-        }
-    }
 
     .table-header {
         background-color: var(--table-header-color);
-        font-weight: 700;
-        display: flex;
         border-bottom: solid 2px var(--primary-color);
-
-        > div {
-            flex: 1;
-            padding: 12px 14px;
-        }
     }
 
     .table-body {
         background-color: var(--table-body-color);
-        font-weight: 400;
 
         .table-row {
-            display: flex;
             border-bottom: solid 1px var(--primary-color);
-
-            > div {
-                flex: 1;
-                padding: 12px 14px;
-            }
         }
     }
 
@@ -209,15 +148,18 @@
 
 #canvas-wrapper {
     width: 100%;
-    height: 410px; /* Ensure this is set */
+    height: 410px;
+    /* Ensure this is set */
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #f8f9fa; /* Optional: Just to make it visible */
+    background: #f8f9fa;
+    /* Optional: Just to make it visible */
 }
 
 #demo-canvas {
-    display: block; /* Removes extra spacing */
+    display: block;
+    /* Removes extra spacing */
     width: 100%;
     height: 100%;
 }
