@@ -6,7 +6,7 @@
         border-radius: 4px;
         position: relative;
         z-index: 2;
-        
+         
         &:hover {
             opacity: 1;
             background-color: var(--primary-alternate-color);
